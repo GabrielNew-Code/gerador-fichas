@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.container {
+  width: 820px;
+  height: 520px;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo img {
+  max-height: 40px;
+  width: auto;
+}
+
+
+header .logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px; /* era 20px */
+}
+
+
+.logo-placeholder {
+  width: 150px;
+  height: 50px;
+  background: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+header h1 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.linha {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 120px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 10px;
+  background-color: #222;
+  color: white;
+  border: 2px solid #888;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.ficha-grid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 5px;
+}
+
+
+.botoes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #444;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #666;
+}
+
+
+/* Novo */
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.nota-box {
+  display: flex;
+  flex-direction: row; /* de coluna para linha */
+  align-items: center;
+  gap: 10px;
+}
+
+.nota-box input {
+  width: 200px; /* ajustado para não ficar muito grande */
+  padding: 8px;
+  background-color: #222;
+  color: white;
+  border: 2px solid #888;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.cabecalho h1 {
+  font-size: 28px;
+  margin: 0;
+  color: white;
+}
+
+.negrito {
+  font-weight: bold;
+}
+
+
+/* === ===  DEEPSEEK  === === */
+
+/* Aviso Invalido Ano */
+.ano-invalido {
+    border: 2px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.ano-valido {
+    border: 2px solid #00aa00;
+    background-color: #eeffee;
+}
+
+.placa-invalida {
+    border: 2px solid #ff0000;
+    background-color: #ffeeee;
+}
+
+.placa-valida {
+    border: 2px solid #00aa00;
+    background-color: #eeffee;
+}
+
+  .erro {
+    border-color: red;
+  }
