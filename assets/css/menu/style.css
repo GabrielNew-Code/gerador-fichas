@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  width: 920px; /* Largura fixa para o container */
+  height: 600px; /* Altura maior para dar mais espaço */
+  border: 3px solid #fff; /* Borda fixa */
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinha os itens no topo */
+  align-items: center;
+  position: relative; /* Para garantir que o container não acompanhe a tela */
+}
+
+.logo img {
+  max-height: 80px; /* Logo menor */
+  width: auto;
+  margin-bottom: 20px; /* Espaço entre logo e título */
+}
+
+header .logo-titulo {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Alinha a logo e o título no centro */
+  margin-bottom: 30px; /* Maior espaçamento entre o título e os botões */
+}
+
+header h1 {
+  font-size: 42px; /* Reduzido para melhor proporção */
+  margin: 0;
+  margin-left: 20px; /* Espaço entre logo e título */
+}
+
+.ficha-grid {
+  display: flex;
+  width: 100%;
+  justify-content: space-around; /* Alinha os botões com espaçamento */
+  gap: 20px; /* Espaçamento entre os botões */
+}
+
+.btn-ficha1, .btn-ficha2 {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Esconde a parte da imagem que ultrapassa os limites do botão */
+  height: 410px; /* Altura dos botões */
+  width: 250px; /* Largura fixa para os botões */
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.btn-ficha1 img, .btn-ficha2 img {
+  width: 100%; /* A imagem ocupa todo o tamanho do botão */
+  height: 100%; /* A altura da imagem também será igual ao tamanho do botão */
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  transition: transform 0.3s ease-in-out; /* Efeito de transição suave */
+}
+
+.btn-ficha1:hover img, .btn-ficha2:hover img {
+  transform: scale(1.1); /* Aumenta a imagem 10% ao passar o mouse sobre o botão */
+}
+
+.btn-ficha1 span, .btn-ficha2 span {
+  position: absolute;
+  bottom: 10px; /* Coloca o texto na parte inferior do botão */
+  color: white;
+  font-size: 18px; /* Tamanho maior do texto */
+  font-weight: bold;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+  text-align: center;
+  width: 100%;
+}
+
+/* Adicionando uma animação de zoom para os botões */
+.btn-ficha1:hover, .btn-ficha2:hover {
+  transform: scale(1.05); /* Efeito suave de zoom ao passar o mouse */
+}
